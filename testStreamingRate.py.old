@@ -1,0 +1,35 @@
+#!/usr/bin/env python
+
+# command line: desired bitrate for each channel, max packet size, number of channels, start delay (between channels), test duration, packet_size
+
+import time
+from optparse import OptionParser
+import qiknet.scheduler
+import TestClient
+
+
+clients = []
+def createClient(scheduler, (name, bitrate, duration, host)):
+  ch = TestClient.QikTestClient(scheduler = scheduler, id=name, address=(host, 11528), bitrate=bitrate, streamingDuration=duration)
+  clients.append(ch)
+
+def main():
+  parser = OptionParser()
+  parser.add_option("-n", action="store", type="int", default=1, dest="clients", help="How many clients to run")
+  parser.add_option("-d", action="store", type="int", default=5, dest="delay", help="Delay between client start")
+  parser.add_option("-t", action="store", type="int", default=0, dest="duration", help="Test duration")
+  parser.add_option("-r", "--bitrate", action="store", type="int", default=300, dest="bitrate", help="Streaming bitrate, kbps")
+  parser.add_option("-H", '--host', action="store", type="string", default='edge1.stage.qik.com', dest="host", help="Edge server address")
+  (options, args) = parser.parse_args()
+  
+  sch = qiknet.scheduler.MyScheduler()
+
+  timestrart=time.time()
+  for i in range(0, options.clients):
+    sch.addTaskAt(createClient, ('c%d'%i, options.bitrate, options.duration, options.host), timestrart + i*options.delay)
+
+  sch.run(use_poll=True)
+
+if __name__ =="__main__":
+  main()
+

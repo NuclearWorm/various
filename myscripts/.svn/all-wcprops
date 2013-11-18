@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/33/trunk/testscripts/myscripts
+END
+dm.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/testscripts/myscripts/dm.py
+END
+logger_s.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/8/trunk/testscripts/myscripts/logger_s.py
+END
+cherrypy.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/7/trunk/testscripts/myscripts/cherrypy.py
+END
+skype_pynotify.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/7/trunk/testscripts/myscripts/skype_pynotify.py
+END

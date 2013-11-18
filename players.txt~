@@ -1,0 +1,15 @@
+X playback=false&polling=false&user=USER&displayname=DISPLAYNAME&safelink=SAFELINK&userlock=true&islive=&username=anonymous
+
+X playback=false&polling=true&safelink=SAFELINK&userlock=true&skiplive=false
+
+X streamname=STREAM_NAME&vid=VID_NUMBER&playback=false&polling=false&safelink=SAFELINK&userlock=true
+
+X user=USER&displayname=DISPLAYNAME&safelink=SAFELINK&userlock=true&islive=&username=anonymous&playback=true
+
+userlock=true&streamname=STREAM_NAME&vid=VID_NUMBER&safelink=SAFELINK
+
+rssURL=http://qik.com/video/f7d1335e8bb24747944d1b6c9103336b.rss&#038;autoPlay=false
+
+rssURL=http://qik.com/video/cdb5c5a49bf44d71a9b3ad0b462a067f.rss&autoPlay=false&polling=false
+
+rssURL=http://qik.com/video/58ec36a538f44664ad26e6593d2e95ae.rss&autoPlay=false

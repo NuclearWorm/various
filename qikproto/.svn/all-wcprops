@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/testscripts/qikproto
+END
+SignallingProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/testscripts/qikproto/SignallingProtocol.py
+END
+presentation.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/testscripts/qikproto/presentation.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/testscripts/qikproto/parser.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/testscripts/qikproto/__init__.py
+END
+MediaProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/testscripts/qikproto/MediaProtocol.py
+END
